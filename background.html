@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Full Screen Background Video</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="content">
+  <img src="Logo.gif">
+  <h1 class="content__heading">BLACK FLAMINGO BOOKING</h1>
+  <p class="content__teaser">We are a boutique booking agency located in the heart of Austin Texas</p>
+  <a href="https://www.facebook.com/blackflamingobooking/" class="content__cta">Book With Us Today!</a>
+</div><!-- /content -->
+
+<video id="my-video" class="video" muted loop>
+  <source src="Guitar.mov" type="video/mp4">
+</video><!-- /video -->
+
+<script>
+(function() {
+  /**
+   * Video element
+   * @type {HTMLElement}
+   */
+  var video = document.getElementById("my-video");
+  /**
+   * Check if video can play, and play it
+   */
+  video.addEventListener( "canplay", function() {
+    video.play();
+  });
+})();
+</script>
+
+</body>
+</html>
