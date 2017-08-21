@@ -86,8 +86,6 @@ img {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-opacity: 0.8;
-        filter: alpha(opacity=50); /* For IE8 and earlier */
 
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
       filter: grayscale(100%);
